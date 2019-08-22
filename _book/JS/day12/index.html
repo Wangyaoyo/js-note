@@ -1,0 +1,894 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>基本包装类型 · Note</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="yaoxxxyao">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-section/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../day13/" />
+    
+    
+    <link rel="prev" href="../day11/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    笔记介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../day01/">
+            
+                <a href="../day01/">
+            
+                    
+                    JavaScript概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../day02/">
+            
+                <a href="../day02/">
+            
+                    
+                    语法、关键保留字、变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../day03/">
+            
+                <a href="../day03/">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../day04/">
+            
+                <a href="../day04/">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../day05/">
+            
+                <a href="../day05/">
+            
+                    
+                    控制流程语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../day06/">
+            
+                <a href="../day06/">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../day07/">
+            
+                <a href="../day07/">
+            
+                    
+                    对象和数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../day08/">
+            
+                <a href="../day08/">
+            
+                    
+                    时间与日期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../day09/">
+            
+                <a href="../day09/">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../day10/">
+            
+                <a href="../day10/">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../day11/">
+            
+                <a href="../day11/">
+            
+                    
+                    变量、作用域及内存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.12" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    基本包装类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../day13/">
+            
+                <a href="../day13/">
+            
+                    
+                    内置对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../day14/">
+            
+                <a href="../day14/">
+            
+                    
+                    面向对象与原型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../day15/">
+            
+                <a href="../day15/">
+            
+                    
+                    匿名函数与闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../day16/">
+            
+                <a href="../day16/">
+            
+                    
+                    BOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../day17/">
+            
+                <a href="../day17/">
+            
+                    
+                    浏览器检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../day18/">
+            
+                <a href="../day18/">
+            
+                    
+                    DOM基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="../day19/">
+            
+                <a href="../day19/">
+            
+                    
+                    DOM进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="../day20/">
+            
+                <a href="../day20/">
+            
+                    
+                    DOM操作表格及样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="../day21/">
+            
+                <a href="../day21/">
+            
+                    
+                    DOM元素尺寸和位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="../day22/">
+            
+                <a href="../day22/">
+            
+                    
+                    动态加载脚本和样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="../day23/">
+            
+                <a href="../day23/">
+            
+                    
+                    事件入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="../day24/">
+            
+                <a href="../day24/">
+            
+                    
+                    事件对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="../day25/">
+            
+                <a href="../day25/">
+            
+                    
+                    事件绑定及深入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.26" data-path="../day26/">
+            
+                <a href="../day26/">
+            
+                    
+                    表单处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.27" data-path="../day27/">
+            
+                <a href="../day27/">
+            
+                    
+                    错误处理与调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.28" data-path="../day28/">
+            
+                <a href="../day28/">
+            
+                    
+                    cookie与存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.29" data-path="../day29/">
+            
+                <a href="../day29/">
+            
+                    
+                    XML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.30" data-path="../day30/">
+            
+                <a href="../day30/">
+            
+                    
+                    XPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.31" data-path="../day31/">
+            
+                <a href="../day31/">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.32" data-path="../day32/">
+            
+                <a href="../day32/">
+            
+                    
+                    AJAX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.33" data-path="../day33/">
+            
+                <a href="../day33/">
+            
+                    
+                    博客-理解JS库对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.34" data-path="../day34/">
+            
+                <a href="../day34/">
+            
+                    
+                    博客-连缀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.35" data-path="../day35/">
+            
+                <a href="../day35/">
+            
+                    
+                    是否改变原数组的常用方法归纳
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../Git/git.html">
+            
+                <a href="../../Git/git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >基本包装类型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x57FA;&#x672C;&#x5305;&#x88C5;&#x7C7B;&#x578B;"><a name="&#x57FA;&#x672C;&#x5305;&#x88C5;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;&#x5305;&#x88C5;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x672C;&#x5305;&#x88C5;&#x7C7B;&#x578B;</h2>
+<h4 id="&#x5B66;&#x4E60;&#x8981;&#x70B9;&#xFF1A;"><a name="&#x5B66;&#x4E60;&#x8981;&#x70B9;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x5B66;&#x4E60;&#x8981;&#x70B9;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B66;&#x4E60;&#x8981;&#x70B9;&#xFF1A;</h4>
+<ul>
+<li><h5 id="&#x6982;&#x8FF0;"><a name="&#x6982;&#x8FF0;" class="anchor-navigation-ex-anchor" href="#&#x6982;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6982;&#x8FF0;</h5>
+</li>
+<li><h5 id="boolean&#x7C7B;&#x578B;"><a name="boolean&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#boolean&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>Boolean&#x7C7B;&#x578B;</h5>
+</li>
+<li><h5 id="number&#x7C7B;&#x578B;"><a name="number&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#number&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>Number&#x7C7B;&#x578B;</h5>
+</li>
+<li><h5 id="string&#x7C7B;&#x578B;"><a name="string&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#string&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>String&#x7C7B;&#x578B;</h5>
+</li>
+</ul>
+<h5 id="&#x5305;&#x88C5;&#x7C7B;&#x578B;&#x7684;&#x4F5C;&#x7528;&#xFF1A;"><a name="&#x5305;&#x88C5;&#x7C7B;&#x578B;&#x7684;&#x4F5C;&#x7528;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x5305;&#x88C5;&#x7C7B;&#x578B;&#x7684;&#x4F5C;&#x7528;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5305;&#x88C5;&#x7C7B;&#x578B;&#x7684;&#x4F5C;&#x7528;&#xFF1A;</h5>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x4E0D;&#x5E38;&#x7528;</span>
+var box = <span class="hljs-keyword">new</span> String(<span class="hljs-string">&apos;Mr . yaoxxx&apos;</span>);
+box.name = <span class="hljs-string">&apos;yaoxxx&apos;</span>;
+box.age = function(){
+    <span class="hljs-keyword">return</span> <span class="hljs-number">100</span>;
+};
+alert(box);
+alert(typeof box);                <span class="hljs-comment">//Object</span>
+alert(box.substring(<span class="hljs-number">2</span>));         <span class="hljs-comment">//&#x4ECE;&#x7B2C;&#x4E8C;&#x4E2A;&#x4F4D;&#x7F6E;&#x5F00;&#x59CB;&#x622A;&#x53D6;&#x5230;&#x6700;&#x540E;&#xFF0C;&#x7D22;&#x5F15;&#x4ECE;0&#x5F00;&#x59CB;</span>
+alert(box.name);                 <span class="hljs-comment">//&#x81EA;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;  &#x6709;&#x6548;</span>
+alert(box.age());                <span class="hljs-comment">//&#x81EA;&#x5B9A;&#x4E49;&#x65B9;&#x6CD5;  &#x6709;&#x6548;</span>
+</code></pre>
+<h4 id="number&#x7C7B;&#x578B;_1"><a name="number&#x7C7B;&#x578B;_1" class="anchor-navigation-ex-anchor" href="#number&#x7C7B;&#x578B;_1"><i class="fa fa-link" aria-hidden="true"></i></a>Number&#x7C7B;&#x578B;</h4>
+<ul>
+<li><h5 id="var-box--1000"><a name="var-box--1000" class="anchor-navigation-ex-anchor" href="#var-box--1000"><i class="fa fa-link" aria-hidden="true"></i></a>var box = 1000;</h5>
+|&#x5C5E;&#x6027;|&#x63CF;&#x8FF0;|
+|---|---|
+|box.toString();       |        //&#x8F6C;&#x5316;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;|
+|box.toLocaleString();  |       //1,000|
+|box.toFixed(2);     |          //&#x5C0F;&#x6570;&#x70B9;&#x540E;&#x4FDD;&#x7559;&#x4E24;&#x4F4D;|
+|box.toExponential();    |      //&#x4EE5;&#x6307;&#x6570;&#x5F62;&#x5F0F;&#x8868;&#x793A;&#x5E76;&#x8F6C;&#x5316;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;|
+|box.toPrecision(2);  |      //&#x6839;&#x636E;&#x4F20;&#x53C2;&#x6765;&#x51B3;&#x5B9A;&#x6307;&#x6570;&#x6216;&#x8005;&#x70B9;&#x6570;  |</li>
+</ul>
+<h4 id="string&#x7C7B;&#x578B;_1"><a name="string&#x7C7B;&#x578B;_1" class="anchor-navigation-ex-anchor" href="#string&#x7C7B;&#x578B;_1"><i class="fa fa-link" aria-hidden="true"></i></a>String&#x7C7B;&#x578B;</h4>
+<ul>
+<li><h5 id="string&#x5BF9;&#x8C61;&#x5C5E;&#x6027;"><a name="string&#x5BF9;&#x8C61;&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#string&#x5BF9;&#x8C61;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>String&#x5BF9;&#x8C61;&#x5C5E;&#x6027;</h5>
+<p>|&#x5C5E;&#x6027;|&#x63CF;&#x8FF0;|
+|---|---|
+|length|&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5B57;&#x7B26;&#x957F;&#x5EA6;|
+|constructor|&#x8FD4;&#x56DE;&#x521B;&#x5EFA;String&#x5BF9;&#x8C61;&#x7684;&#x51FD;&#x6570;|
+|prototype|&#x901A;&#x8FC7;&#x6DFB;&#x52A0;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x6269;&#x5C55;&#x5B57;&#x7B26;&#x4E32;&#x5B9A;&#x4E49;|</p>
+</li>
+<li><h5 id="var-box--mryaoxxx"><a name="var-box--mryaoxxx" class="anchor-navigation-ex-anchor" href="#var-box--mryaoxxx"><i class="fa fa-link" aria-hidden="true"></i></a>var box = &apos;Mr.yaoxxx&apos;;</h5>
+<p>|&#x5B57;&#x7B26;&#x65B9;&#x6CD5;|&#x63CF;&#x8FF0;|
+|---|---|
+|box.charAt(1);|&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x4E0B;&#x6807;&#x7684;&#x503C;|
+|box.charCodeAt(4)|&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x5B57;&#x7B26;&#x7684;ASC&#x7801;|</p>
+</li>
+<li><h5 id="&#x5B57;&#x7B26;&#x4E32;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;"><a name="&#x5B57;&#x7B26;&#x4E32;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x5B57;&#x7B26;&#x4E32;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B57;&#x7B26;&#x4E32;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;</h5>
+<p>| &#x65B9;&#x6CD5;| &#x63CF;&#x8FF0; |
+|--------|--------|
+|concat(str1,str2)|&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;|&#x4E0D;&#x6539;&#x53D8;&#x539F;&#x6765;&#x7684;&#x5B57;&#x7B26;&#x4E32;
+|slice(4,6)|&#x4ECE;4&#x5230;6&#x524D;&#x95ED;&#x540E;&#x5F00;|&#x4E0D;&#x6539;&#x53D8;&#x539F;&#x6765;
+|substring(4,6)|&#x4E0E;slice()&#x76F8;&#x540C;&#x4F5C;&#x7528;|&#x4E0D;&#x6539;&#x53D8;&#x539F;&#x6765;
+|substr(4,6)|&#x4ECE;4&#x5F00;&#x59CB;&#x7684;6&#x4E2A;&#x5B57;&#x7B26;|&#x4E0D;&#x6539;&#x53D8;&#x539F;&#x6765;
+|slice(4)|&#x540C;&#x4E0B;
+|substring(4)|&#x4ECE;&#x7B2C;&#x56DB;&#x4F4D;&#x5F00;&#x59CB;&#x7684;&#x6240;&#x6709;
+|substr(4)|&#x540C;&#x4E0A;</p>
+</li>
+<li><h5 id="&#x5B57;&#x7B26;&#x4E32;&#x4F4D;&#x7F6E;&#x65B9;&#x6CD5;"><a name="&#x5B57;&#x7B26;&#x4E32;&#x4F4D;&#x7F6E;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x5B57;&#x7B26;&#x4E32;&#x4F4D;&#x7F6E;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B57;&#x7B26;&#x4E32;&#x4F4D;&#x7F6E;&#x65B9;&#x6CD5;</h5>
+<p>| &#x65B9;&#x6CD5; | &#x63CF;&#x8FF0; |
+|--------|--------|
+| indexOf(str,n)|&#x4ECE;n&#x5F00;&#x59CB;&#x641C;&#x7D22;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;str&#x7684;&#x4F4D;&#x7F6E;|
+|lastIndexOf(str,n)|&#x4ECE;n&#x5F00;&#x59CB;&#x641C;&#x7D22;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;str&#x7684;&#x4F4D;&#x7F6E;|
+==&#x5747;&#x8FD4;&#x56DE;&#x7D22;&#x5F15;&#x503C;&#xFF0C;&#x6CA1;&#x6709;n&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x65F6;&#x5019;&#x9ED8;&#x8BA4;&#x4ECE;0&#x5F00;&#x59CB;==</p>
+<h5 id="&#x793A;&#x4F8B;&#xFF1A;"><a name="&#x793A;&#x4F8B;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x793A;&#x4F8B;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x793A;&#x4F8B;&#xFF1A;</h5>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x627E;&#x5230;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x6240;&#x6709;&#x7684;&apos;W&apos;</span>
+var arr = [];
+var x = box.indexOf(<span class="hljs-string">&apos;W&apos;</span>);
+<span class="hljs-keyword">while</span>(x &gt; -<span class="hljs-number">1</span>){
+  arr.push(x);
+  x = box.indexOf(<span class="hljs-string">&apos;W&apos;</span>,x+<span class="hljs-number">1</span>);
+}
+alert(arr);
+</code></pre>
+</li>
+<li>&#x5927;&#x5C0F;&#x5199;&#x8F6C;&#x6362;&#x65B9;&#x6CD5;
+|&#x65B9;&#x6CD5;|&#x63CF;&#x8FF0;|
+|--------|--------|
+|toLowerCase(str)|&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x5168;&#x90E8;&#x88AB;&#x8F6C;&#x6362;&#x4E3A;&#x5C0F;&#x5199;|
+|toUpperCase(str)|&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x5168;&#x90E8;&#x88AB;&#x8F6C;&#x6362;&#x4E3A;&#x5927;&#x5199;|
+|toLocaleLowerCase(str)|&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x5168;&#x90E8;&#x88AB;&#x8F6C;&#x6362;&#x4E3A;&#x5C0F;&#x5199;,&#x5E76;&#x4E14;&#x672C;&#x5730;&#x5316;|&#x65E0;&#x533A;&#x522B;
+|toLocaleUpperCase(str)|&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x5168;&#x90E8;&#x88AB;&#x8F6C;&#x6362;&#x4E3A;&#x5927;&#x5199;&#xFF0C;&#x5E76;&#x4E14;&#x672C;&#x5730;&#x5316;|&#x65E0;&#x533A;&#x522B;</li>
+<li>&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x6A21;&#x5F0F;&#x5339;&#x914D;(&#x56DB;&#x4E2A;&#x51FD;&#x6570;)
+|&#x65B9;&#x6CD5;|&#x63CF;&#x8FF0;|
+|---|---|
+|String.fromCharCode(asc&#x7801;)|&#x9759;&#x6001;&#x65B9;&#x6CD5;&#xFF0C;&#x8F93;&#x51FA;asc&#x7801;&#x5BF9;&#x5E94;&#x5B57;&#x7B26;|
+|localeCompare(str1,str2)|&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x76F8;&#x5E94;&#x7684;&#x503C;|  &#xFF1F;&#xFF1F;&#xFF1F;&#xFF1F;&#xFF1F;<pre><code class="lang-java">var box = <span class="hljs-string">&apos;Lee&apos;</span>;
+box.localeCompare(<span class="hljs-string">&apos;zoo&apos;</span>);    <span class="hljs-comment">//-1</span>
+box.localeCompare(<span class="hljs-string">&apos;aoo&apos;</span>);    <span class="hljs-comment">//1</span>
+<span class="hljs-number">1</span>&#x3001;&#x76F8;&#x7B49;&#xFF0C;&#x8FD4;&#x56DE;<span class="hljs-number">0</span>
+<span class="hljs-number">2</span>&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x5728;&#x5B57;&#x6BCD;&#x8868;&#x4E2D;&#x6392;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x53C2;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x8FD4;&#x56DE;&#x8D1F;&#x6570;&#xFF0C;-<span class="hljs-number">1</span>
+<span class="hljs-number">3</span>&#x3001;&#x4E4B;&#x540E;&#xFF0C;&#x8FD4;&#x56DE;&#x6B63;&#x6570;&#xFF0C;<span class="hljs-number">1</span>
+</code></pre>
+</li>
+<li>&#x901A;&#x8FC7;JS&#x751F;&#x6210;&#x4E00;&#x4E2A;HTML&#x6807;&#x7B7E;
+var box = &apos;&#x767E;&#x5EA6;&apos;&#xFF1B;
+box.link(&apos;www.baidu.com&apos;);  //<a href="www.baidu.com">&#x767E;&#x5EA6;</a>
+box.bold();   //<b>&#x767E;&#x5EA6;</b> </li>
+</ul>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-08-31 12:17:23
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../day11/" class="navigation navigation-prev " aria-label="Previous page: 变量、作用域及内存">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../day13/" class="navigation navigation-next " aria-label="Next page: 内置对象">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"基本包装类型","level":"1.3.12","depth":2,"next":{"title":"内置对象","level":"1.3.13","depth":2,"path":"JS/day13/README.MD","ref":"./JS/day13/README.MD","articles":[]},"previous":{"title":"变量、作用域及内存","level":"1.3.11","depth":2,"path":"JS/day11/README.MD","ref":"./JS/day11/README.MD","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-plus","splitter","expandable-chapters-small","anchor-navigation-ex","tbfed-pagefooter","toggle-chapters","sectionx","alerts","copy-code-button","escape-words-in-tablecell","toggle-section","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"toggle-section":{"iconUrl":""},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":true},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"alerts":{},"escape-words-in-tablecell":{},"expandable-chapters-small":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"yaoxxxyao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","language":"zh-hans","gitbook":"*","description":"个人笔记"},"file":{"path":"JS/day12/README.MD","mtime":"2018-08-31T04:17:23.728Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-26T03:26:35.691Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-section/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,15 @@
+.code-block{
+    background: #f7f7f7;
+} 
+.img-box{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+}
+.code-block{
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+.brief-text{
+    margin-left:8px;
+}

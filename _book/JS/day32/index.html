@@ -1,0 +1,937 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>AJAX · Note</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="yaoxxxyao">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-section/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../day33/" />
+    
+    
+    <link rel="prev" href="../day31/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    笔记介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../day01/">
+            
+                <a href="../day01/">
+            
+                    
+                    JavaScript概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../day02/">
+            
+                <a href="../day02/">
+            
+                    
+                    语法、关键保留字、变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../day03/">
+            
+                <a href="../day03/">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../day04/">
+            
+                <a href="../day04/">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../day05/">
+            
+                <a href="../day05/">
+            
+                    
+                    控制流程语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../day06/">
+            
+                <a href="../day06/">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../day07/">
+            
+                <a href="../day07/">
+            
+                    
+                    对象和数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../day08/">
+            
+                <a href="../day08/">
+            
+                    
+                    时间与日期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../day09/">
+            
+                <a href="../day09/">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../day10/">
+            
+                <a href="../day10/">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../day11/">
+            
+                <a href="../day11/">
+            
+                    
+                    变量、作用域及内存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../day12/">
+            
+                <a href="../day12/">
+            
+                    
+                    基本包装类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../day13/">
+            
+                <a href="../day13/">
+            
+                    
+                    内置对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../day14/">
+            
+                <a href="../day14/">
+            
+                    
+                    面向对象与原型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../day15/">
+            
+                <a href="../day15/">
+            
+                    
+                    匿名函数与闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../day16/">
+            
+                <a href="../day16/">
+            
+                    
+                    BOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../day17/">
+            
+                <a href="../day17/">
+            
+                    
+                    浏览器检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../day18/">
+            
+                <a href="../day18/">
+            
+                    
+                    DOM基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="../day19/">
+            
+                <a href="../day19/">
+            
+                    
+                    DOM进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="../day20/">
+            
+                <a href="../day20/">
+            
+                    
+                    DOM操作表格及样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="../day21/">
+            
+                <a href="../day21/">
+            
+                    
+                    DOM元素尺寸和位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="../day22/">
+            
+                <a href="../day22/">
+            
+                    
+                    动态加载脚本和样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="../day23/">
+            
+                <a href="../day23/">
+            
+                    
+                    事件入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="../day24/">
+            
+                <a href="../day24/">
+            
+                    
+                    事件对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="../day25/">
+            
+                <a href="../day25/">
+            
+                    
+                    事件绑定及深入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.26" data-path="../day26/">
+            
+                <a href="../day26/">
+            
+                    
+                    表单处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.27" data-path="../day27/">
+            
+                <a href="../day27/">
+            
+                    
+                    错误处理与调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.28" data-path="../day28/">
+            
+                <a href="../day28/">
+            
+                    
+                    cookie与存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.29" data-path="../day29/">
+            
+                <a href="../day29/">
+            
+                    
+                    XML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.30" data-path="../day30/">
+            
+                <a href="../day30/">
+            
+                    
+                    XPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.31" data-path="../day31/">
+            
+                <a href="../day31/">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.32" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    AJAX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.33" data-path="../day33/">
+            
+                <a href="../day33/">
+            
+                    
+                    博客-理解JS库对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.34" data-path="../day34/">
+            
+                <a href="../day34/">
+            
+                    
+                    博客-连缀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.35" data-path="../day35/">
+            
+                <a href="../day35/">
+            
+                    
+                    是否改变原数组的常用方法归纳
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../Git/git.html">
+            
+                <a href="../../Git/git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >AJAX</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="ajax"><a name="ajax" class="anchor-navigation-ex-anchor" href="#ajax"><i class="fa fa-link" aria-hidden="true"></i></a>AJAX</h2>
+<p>&#x5B66;&#x4E60;&#x8981;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>XMLHttpRequest</li>
+<li>GET&#x548C;POST</li>
+<li>&#x5C01;&#x88C5;Ajax</li>
+</ul>
+<p>&#x4E00;&#x79CD;&#x65E0;&#x5237;&#x65B0;&#x63D0;&#x4EA4;&#x6280;&#x672F;</p>
+<h4 id="&#x4E00;&#x3001;xmlhttprequest"><a name="&#x4E00;&#x3001;xmlhttprequest" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;xmlhttprequest"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;XMLHTTPRequest</h4>
+<p>AJAX&#x6280;&#x672F;&#x7684;&#x6838;&#x5FC3;&#x662F;XHR&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x521B;&#x5EFA;xhr&#x5BF9;&#x8C61;</span>
+<span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
+<span class="hljs-comment">//&#x8C03;&#x7528;open&#x65B9;&#x6CD5;&#xFF1A;&#x8868;&#x793A;&#x51C6;&#x5907;&#x8BF7;&#x6C42;&#xFF08;1get&#x65B9;&#x5F0F;&#x8BF7;&#x6C42;  2&#x8BF7;&#x6C42;&#x7684;URL 3&#x662F;&#x5426;&#x540C;&#x6B65;&#xFF09;</span>
+ xhr.open(<span class="hljs-string">&apos;get&apos;</span>,<span class="hljs-string">&apos;demo.php&apos;</span>,<span class="hljs-literal">false</span>);
+<span class="hljs-comment">//send&#x65B9;&#x6CD5;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#xFF08;get&#x4E0D;&#x9700;&#x8981;&#x6570;&#x636E;&#x8BF7;&#x6C42;&#xFF0C;&#x5219;&#x4E3A;null&#xFF09;</span>
+ xhr.send(<span class="hljs-literal">null</span>);
+</code></pre>
+<p>&#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x5230;&#x670D;&#x52A1;&#x7AEF;&#x540E;&#xFF1A;&#x54CD;&#x5E94;&#x7684;&#x6570;&#x636E;&#x4F1A;&#x81EA;&#x52A8;&#x586B;&#x5145;XHR&#x5BF9;&#x8C61;&#x7684;&#x4EE5;&#x4E0B;&#x56DB;&#x4E2A;&#x5C5E;&#x6027;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>responseText</td>
+<td>&#x4F5C;&#x4E3A;&#x54CD;&#x5E94;&#x4E3B;&#x4F53;&#x88AB;&#x8FD4;&#x56DE;&#x7684;&#x6587;&#x672C;</td>
+</tr>
+<tr>
+<td>responseXML</td>
+<td>&#x5982;&#x679C;&#x54CD;&#x5E94;&#x4E3B;&#x4F53;&#x662F;xml&#x6587;&#x4EF6;&#xFF0C;&#x5305;&#x542B;</td>
+</tr>
+<tr>
+<td>status</td>
+<td>&#x54CD;&#x5E94;&#x7684;HTTP&#x72B6;&#x6001;</td>
+</tr>
+<tr>
+<td>statusText</td>
+<td>HTTP&#x72B6;&#x6001;&#x7684;&#x8BF4;&#x660E;</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x53EF;&#x4EE5;&#x7ED1;&#x5B9A;&#x5728;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#x91CC;&#xFF0C;&#x53EA;&#x8981;&#x70B9;&#x51FB;&#x5C31;&#x80FD;&#x5B9E;&#x65F6;&#x83B7;&#x5F97;&#x6700;&#x65B0;&#x7684;&#x6570;&#x636E;</span>
+<span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
+xhr.open(<span class="hljs-string">&apos;get&apos;</span>,<span class="hljs-string">&apos;demo.php&apos;</span>,<span class="hljs-literal">false</span>);
+xhr.send(<span class="hljs-literal">null</span>);
+<span class="hljs-keyword">if</span>(xhr.status == <span class="hljs-number">200</span>){          <span class="hljs-comment">//&#x6210;&#x529F;&#x7684;&#x72B6;&#x6001;&#x7801;&#xFF1A;200</span>
+    alert(xhr.responseText);
+}<span class="hljs-keyword">else</span>{
+    <span class="hljs-comment">//&#x6253;&#x5370;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x636E;</span>
+    alert(xhr.responseText);         <span class="hljs-comment">//2018-03-34 </span>
+}
+xhr.abort();           <span class="hljs-comment">//&#x53D6;&#x6D88;&#x5F02;&#x6B65;&#x8BF7;&#x6C42;</span>
+</code></pre>
+<p><strong>&#x5F02;&#x6B65;&#x8C03;&#x7528;&#xFF1A;</strong>&#x9700;&#x8981;&#x89E6;&#x53D1;readystatechange&#x4E8B;&#x4EF6;------&#x300B;&#x68C0;&#x6D4B;readyState&#x5C5E;&#x6027;&#x5373;&#x53EF;&#xFF0C;&#x6709;&#x4E94;&#x4E2A;&#x503C;&#xFF1A;</p>
+<p><img src="&#x6355;&#x83B7;.PNG" alt=""></p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> createXHR();
+xhr.onreadystatechange = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">if</span> (xhr.readyState == <span class="hljs-number">4</span>) {
+    <span class="hljs-keyword">if</span> (xhr.status == <span class="hljs-number">200</span>) {
+        alert(xhr.responseText);
+    } <span class="hljs-keyword">else</span> {
+        alert(<span class="hljs-string">&apos;&#x6570;&#x636E;&#x8FD4;&#x56DE;&#x5931;&#x8D25;&#xFF01;&#x72B6;&#x6001;&#x4EE3;&#x7801;&#xFF1A;&apos;</span> + xhr.status + <span class="hljs-string">&apos;&#x72B6;&#x6001;&#x4FE1;&#x606F;&#xFF1A;&apos;</span> + xhr.statusText);
+    }
+}
+};
+xhr.open(<span class="hljs-string">&apos;get&apos;</span>, <span class="hljs-string">&apos;demo.php?rand=&apos;</span> + <span class="hljs-built_in">Math</span>.random(), <span class="hljs-literal">true</span>);
+xhr.send(<span class="hljs-literal">null</span>);
+</code></pre>
+<h4 id="&#x4E8C;&#x3001;get&#x4E0E;post"><a name="&#x4E8C;&#x3001;get&#x4E0E;post" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;get&#x4E0E;post"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;GET&#x4E0E;POST</h4>
+<p>HTTP&#x5934;&#x4FE1;&#x606F;&#xFF1A;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x7684;&#x54CD;&#x5E94;&#x5934;&#x4FE1;&#x606F;    &#x548C;    &#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x51FA;&#x53BB;&#x7684;&#x8BF7;&#x6C42;&#x5934;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x54CD;&#x5E94;&#x5934;&#x4FE1;&#x606F;</span>
+xhr.getResponseHeader(<span class="hljs-string">&apos;Content-Type&apos;</span>);
+<span class="hljs-comment">//&#x83B7;&#x53D6;&#x6574;&#x4E2A;&#x54CD;&#x5E94;&#x5934;&#x4FE1;&#x606F;</span>
+xhr.getAllResponseHeaders();
+<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x5355;&#x4E2A;&#x8BF7;&#x6C42;&#x5934;&#x4FE1;&#x606F;</span>
+xhr.setResquestHeader(<span class="hljs-string">&apos;MyHeader&apos;</span>,<span class="hljs-string">&apos;yaoxxx&apos;</span>);
+</code></pre>
+<p>GET&#x8BF7;&#x6C42;&#xFF1A;&#x901A;&#x8FC7; URL &#x540E;&#x7684;&#x95EE;&#x53F7;&#x7ED9;&#x670D;&#x52A1;&#x5668;&#x4F20;&#x9012;&#x952E;&#x503C;&#x5BF9;&#x6570;&#x636E;&#xFF0C;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x4F20;&#x53C2;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;encodeURIComponent()&#x8FDB;&#x884C;&#x7F16;&#x7801;&#x5904;&#x7406;&#x3002;</p>
+<pre><code class="lang-js">xhr.open(<span class="hljs-string">&apos;get&apos;</span>, <span class="hljs-string">&apos;demo.php?rand=&apos;</span> + <span class="hljs-built_in">Math</span>.random() + <span class="hljs-string">&apos;&amp;name=Koo&apos;</span>, <span class="hljs-literal">true</span>);
+</code></pre>
+<p>POST&#x8BF7;&#x6C42;&#xFF1A;&#x901A;&#x8FC7;send&#x65B9;&#x6CD5;&#x5411;&#x670D;&#x52A1;&#x5668;&#x63D0;&#x4EA4;&#x6570;&#x636E;</p>
+<pre><code class="lang-js">xhr.send(<span class="hljs-string">&apos;name=Lee&amp;age=100&apos;</span>);
+<span class="hljs-comment">//&#x9700;&#x8981;&#x7279;&#x522B;&#x7684;&#x5904;&#x7406;</span>
+xhr.setRequestHeader(<span class="hljs-string">&apos;Content-Type&apos;</span>, <span class="hljs-string">&apos;application/x-www-form-urlencoded&apos;</span>);
+</code></pre>
+<h4 id="&#x4E09;&#x3001;&#x5C01;&#x88C5;ajax"><a name="&#x4E09;&#x3001;&#x5C01;&#x88C5;ajax" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;&#x5C01;&#x88C5;ajax"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x3001;&#x5C01;&#x88C5;AJAX</h4>
+<pre><code class="lang-js">function ajax(obj) {
+    var xhr = new createXHR();
+    obj.url = obj.url + &apos;?rand=&apos; + Math.random();
+    obj.data = params(obj.data);
+    if (obj.method === &apos;get&apos;) obj.url = obj.url.indexOf(&apos;?&apos;) == -1 ?
+obj.url + &apos;?&apos; + obj.data : obj.url + &apos;&amp;&apos; + obj.data;
+    if (obj.async === true) {
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) callback();
+        };
+    }
+    xhr.open(obj.method, obj.url, obj.async);
+    if (obj.method === &apos;post&apos;) {
+        xhr.setRequestHeader(&apos;Content-Type&apos;, &apos;application/x-www-form-urlencoded&apos;);
+        xhr.send(obj.data);
+    } else {
+        xhr.send(null);
+    }
+    if (obj.async === false) {
+        callback();
+    }
+
+
+    function callback () {
+        if (xhr.status == 200) {
+            obj.success(xhr.responseText); //&#x56DE;&#x8C03;
+        } else {
+            alert(&apos;&#x6570;&#x636E;&#x8FD4;&#x56DE;&#x5931;&#x8D25;&#xFF01;&#x72B6;&#x6001;&#x4EE3;&#x7801;&#xFF1A;&apos; + xhr.status + &apos;&#xFF0C;
+                &#x72B6;&#x6001;&#x4FE1;&#x606F;&#xFF1A;&apos; + xhr.statusText);
+        }
+    }
+}
+
+//&#x8C03;&#x7528; ajax
+addEvent(document, &apos;click&apos;, function () { //IE6 &#x9700;&#x8981;&#x91CD;&#x5199; addEvent
+    ajax({
+    method : &apos;get&apos;,
+    url : &apos;demo.php&apos;,
+    data : {
+    &apos;name&apos; : &apos;Lee&apos;,
+    &apos;age&apos; : 100
+    },
+    success : function (text) {
+        alert(text);
+    },
+    async : true
+    });
+});
+//&#x540D;&#x503C;&#x5BF9;&#x7F16;&#x7801;
+function params(data) {
+    var arr = [];
+    for (var i in data) {
+        arr.push(encodeURIComponent(i) + &apos;=&apos; + encodeURIComponent(data[i]));
+    }
+    return arr.join(&apos;&amp;&apos;);
+}
+</code></pre>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-09-29 21:58:09
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../day31/" class="navigation navigation-prev " aria-label="Previous page: JSON">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../day33/" class="navigation navigation-next " aria-label="Next page: 博客-理解JS库对象">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"AJAX","level":"1.3.32","depth":2,"next":{"title":"博客-理解JS库对象","level":"1.3.33","depth":2,"path":"JS/day33/README.MD","ref":"./JS/day33/README.MD","articles":[]},"previous":{"title":"JSON","level":"1.3.31","depth":2,"path":"JS/day31/README.MD","ref":"./JS/day31/README.MD","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-plus","splitter","expandable-chapters-small","anchor-navigation-ex","tbfed-pagefooter","toggle-chapters","sectionx","alerts","copy-code-button","escape-words-in-tablecell","toggle-section","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"toggle-section":{"iconUrl":""},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":true},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"alerts":{},"escape-words-in-tablecell":{},"expandable-chapters-small":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"yaoxxxyao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","language":"zh-hans","gitbook":"*","description":"个人笔记"},"file":{"path":"JS/day32/README.MD","mtime":"2018-09-29T13:58:09.465Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-26T03:26:35.691Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-section/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

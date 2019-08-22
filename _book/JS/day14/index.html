@@ -1,0 +1,1001 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>面向对象与原型 · Note</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="yaoxxxyao">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-section/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../day15/" />
+    
+    
+    <link rel="prev" href="../day13/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    笔记介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../day01/">
+            
+                <a href="../day01/">
+            
+                    
+                    JavaScript概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../day02/">
+            
+                <a href="../day02/">
+            
+                    
+                    语法、关键保留字、变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../day03/">
+            
+                <a href="../day03/">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../day04/">
+            
+                <a href="../day04/">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../day05/">
+            
+                <a href="../day05/">
+            
+                    
+                    控制流程语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../day06/">
+            
+                <a href="../day06/">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../day07/">
+            
+                <a href="../day07/">
+            
+                    
+                    对象和数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../day08/">
+            
+                <a href="../day08/">
+            
+                    
+                    时间与日期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../day09/">
+            
+                <a href="../day09/">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../day10/">
+            
+                <a href="../day10/">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../day11/">
+            
+                <a href="../day11/">
+            
+                    
+                    变量、作用域及内存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../day12/">
+            
+                <a href="../day12/">
+            
+                    
+                    基本包装类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../day13/">
+            
+                <a href="../day13/">
+            
+                    
+                    内置对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.14" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    面向对象与原型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../day15/">
+            
+                <a href="../day15/">
+            
+                    
+                    匿名函数与闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../day16/">
+            
+                <a href="../day16/">
+            
+                    
+                    BOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../day17/">
+            
+                <a href="../day17/">
+            
+                    
+                    浏览器检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../day18/">
+            
+                <a href="../day18/">
+            
+                    
+                    DOM基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="../day19/">
+            
+                <a href="../day19/">
+            
+                    
+                    DOM进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="../day20/">
+            
+                <a href="../day20/">
+            
+                    
+                    DOM操作表格及样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="../day21/">
+            
+                <a href="../day21/">
+            
+                    
+                    DOM元素尺寸和位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="../day22/">
+            
+                <a href="../day22/">
+            
+                    
+                    动态加载脚本和样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="../day23/">
+            
+                <a href="../day23/">
+            
+                    
+                    事件入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="../day24/">
+            
+                <a href="../day24/">
+            
+                    
+                    事件对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="../day25/">
+            
+                <a href="../day25/">
+            
+                    
+                    事件绑定及深入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.26" data-path="../day26/">
+            
+                <a href="../day26/">
+            
+                    
+                    表单处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.27" data-path="../day27/">
+            
+                <a href="../day27/">
+            
+                    
+                    错误处理与调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.28" data-path="../day28/">
+            
+                <a href="../day28/">
+            
+                    
+                    cookie与存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.29" data-path="../day29/">
+            
+                <a href="../day29/">
+            
+                    
+                    XML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.30" data-path="../day30/">
+            
+                <a href="../day30/">
+            
+                    
+                    XPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.31" data-path="../day31/">
+            
+                <a href="../day31/">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.32" data-path="../day32/">
+            
+                <a href="../day32/">
+            
+                    
+                    AJAX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.33" data-path="../day33/">
+            
+                <a href="../day33/">
+            
+                    
+                    博客-理解JS库对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.34" data-path="../day34/">
+            
+                <a href="../day34/">
+            
+                    
+                    博客-连缀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.35" data-path="../day35/">
+            
+                <a href="../day35/">
+            
+                    
+                    是否改变原数组的常用方法归纳
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../Git/git.html">
+            
+                <a href="../../Git/git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >面向对象与原型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x4E0E;&#x539F;&#x578B;"><a name="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x4E0E;&#x539F;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x4E0E;&#x539F;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x4E0E;&#x539F;&#x578B;</h2>
+<h4 id="&#x5B66;&#x4E60;&#x8981;&#x70B9;&#xFF1A;"><a name="&#x5B66;&#x4E60;&#x8981;&#x70B9;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x5B66;&#x4E60;&#x8981;&#x70B9;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B66;&#x4E60;&#x8981;&#x70B9;&#xFF1A;</h4>
+<ul>
+<li><h5 id="&#x5B66;&#x4E60;&#x6761;&#x4EF6;"><a name="&#x5B66;&#x4E60;&#x6761;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x5B66;&#x4E60;&#x6761;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B66;&#x4E60;&#x6761;&#x4EF6;</h5>
+</li>
+<li><h5 id="&#x521B;&#x5EFA;&#x5BF9;&#x8C61;"><a name="&#x521B;&#x5EFA;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;&#x5BF9;&#x8C61;</h5>
+</li>
+<li><h5 id="&#x539F;&#x578B;"><a name="&#x539F;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x539F;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x539F;&#x578B;</h5>
+</li>
+<li><h5 id="&#x7EE7;&#x627F;"><a name="&#x7EE7;&#x627F;" class="anchor-navigation-ex-anchor" href="#&#x7EE7;&#x627F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EE7;&#x627F;</h5>
+</li>
+</ul>
+<h4 id="&#x4E8C;&#x3001;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;"><a name="&#x4E8C;&#x3001;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;</h4>
+<h5 id="&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x89E3;&#x51B3;&#x4E86;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x4EE3;&#x7801;&#x91CD;&#x590D;&#x7684;&#x95EE;&#x9898;&#xFF1A;"><a name="&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x89E3;&#x51B3;&#x4E86;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x4EE3;&#x7801;&#x91CD;&#x590D;&#x7684;&#x95EE;&#x9898;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x89E3;&#x51B3;&#x4E86;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x4EE3;&#x7801;&#x91CD;&#x590D;&#x7684;&#x95EE;&#x9898;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x89E3;&#x51B3;&#x4E86;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x4EE3;&#x7801;&#x91CD;&#x590D;&#x7684;&#x95EE;&#x9898;&#xFF1A;</h5>
+<pre><code class="lang-java"><span class="hljs-function">function <span class="hljs-title">createObject</span><span class="hljs-params">(name,age)</span></span>{        
+    var obj = <span class="hljs-keyword">new</span> Object();
+    obj.name = name;
+    obj.age = age;
+    obj.run = function(){
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name+<span class="hljs-keyword">this</span>.age+<span class="hljs-string">&apos;&#x8FD0;&#x884C;&#x4E2D;...&apos;</span>;
+    };
+    <span class="hljs-keyword">return</span> obj;                        <span class="hljs-comment">//&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;  </span>
+}
+var box1 = createObject(<span class="hljs-string">&apos;W&apos;</span>,<span class="hljs-number">22</span>);
+var box2 = createObject(<span class="hljs-string">&apos;W&apos;</span>,<span class="hljs-number">25</span>);
+alert(box2.run());
+</code></pre>
+<h5 id="&#x4F46;instanceof&#x65F6;&#x65E0;&#x6CD5;&#x8BC6;&#x522B;&#x4ED6;&#x4EEC;&#x662F;&#x54EA;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5B9E;&#x4F8B;&#x3002;--&#x6539;&#x8FDB;&#xFF1A;&#x4F7F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;"><a name="&#x4F46;instanceof&#x65F6;&#x65E0;&#x6CD5;&#x8BC6;&#x522B;&#x4ED6;&#x4EEC;&#x662F;&#x54EA;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5B9E;&#x4F8B;&#x3002;--&#x6539;&#x8FDB;&#xFF1A;&#x4F7F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x4F46;instanceof&#x65F6;&#x65E0;&#x6CD5;&#x8BC6;&#x522B;&#x4ED6;&#x4EEC;&#x662F;&#x54EA;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5B9E;&#x4F8B;&#x3002;--&#x6539;&#x8FDB;&#xFF1A;&#x4F7F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F46;instanceof&#x65F6;&#x65E0;&#x6CD5;&#x8BC6;&#x522B;&#x4ED6;&#x4EEC;&#x662F;&#x54EA;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5B9E;&#x4F8B;&#x3002;  &#x6539;&#x8FDB;&#xFF1A;&#x4F7F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;</h5>
+<pre><code class="lang-java"><span class="hljs-function">function <span class="hljs-title">Box</span><span class="hljs-params">(name,age)</span></span>{
+    <span class="hljs-keyword">this</span>.name = name;
+    <span class="hljs-keyword">this</span>.age = age;
+    <span class="hljs-keyword">this</span>.run = function(){
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name + <span class="hljs-keyword">this</span>.age + <span class="hljs-string">&apos;&#x8FD0;&#x884C;&#x5462;...&apos;</span>;
+    };
+}
+var box = <span class="hljs-keyword">new</span> Box(<span class="hljs-string">&apos;wy&apos;</span>,<span class="hljs-number">22</span>);
+alert(box.run());
+alert(box <span class="hljs-keyword">instanceof</span> Box);    <span class="hljs-comment">//true</span>
+</code></pre>
+<h5 id="&#x5BF9;&#x8C61;&#x5192;&#x5145;&#x8C03;&#x7528;&#xFF1A;&#x4F46;&#x7EC8;&#x7A76;&#x4E0D;&#x662F;&#x5B83;&#x7684;&#x7C7B;&#x578B;"><a name="&#x5BF9;&#x8C61;&#x5192;&#x5145;&#x8C03;&#x7528;&#xFF1A;&#x4F46;&#x7EC8;&#x7A76;&#x4E0D;&#x662F;&#x5B83;&#x7684;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x5BF9;&#x8C61;&#x5192;&#x5145;&#x8C03;&#x7528;&#xFF1A;&#x4F46;&#x7EC8;&#x7A76;&#x4E0D;&#x662F;&#x5B83;&#x7684;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BF9;&#x8C61;&#x5192;&#x5145;&#x8C03;&#x7528;&#xFF1A;&#x4F46;&#x7EC8;&#x7A76;&#x4E0D;&#x662F;&#x5B83;&#x7684;&#x7C7B;&#x578B;</h5>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x5BF9;&#x8C61;&#x5192;&#x5145;&#xFF0C;&#x62FF;&#x53D6;Box&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;</span>
+var box1 = <span class="hljs-keyword">new</span> Object();
+Box.call(box1,<span class="hljs-string">&apos;yy&apos;</span>,<span class="hljs-number">25</span>);
+alert(box1.run());
+alert(box1 <span class="hljs-keyword">instanceof</span> Box);    <span class="hljs-comment">//false</span>
+</code></pre>
+<h5 id="&#x4E24;&#x4E2A;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x5C5E;&#x6027;&#x76F8;&#x7B49;&#xFF0C;&#x4F46;&#x65B9;&#x6CD5;&#x7684;&#x5F15;&#x7528;&#x4E0D;&#x7B49;"><a name="&#x4E24;&#x4E2A;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x5C5E;&#x6027;&#x76F8;&#x7B49;&#xFF0C;&#x4F46;&#x65B9;&#x6CD5;&#x7684;&#x5F15;&#x7528;&#x4E0D;&#x7B49;" class="anchor-navigation-ex-anchor" href="#&#x4E24;&#x4E2A;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x5C5E;&#x6027;&#x76F8;&#x7B49;&#xFF0C;&#x4F46;&#x65B9;&#x6CD5;&#x7684;&#x5F15;&#x7528;&#x4E0D;&#x7B49;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E24;&#x4E2A;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x5C5E;&#x6027;&#x76F8;&#x7B49;&#xFF0C;&#x4F46;&#x65B9;&#x6CD5;&#x7684;&#x5F15;&#x7528;&#x4E0D;&#x7B49;</h5>
+<pre><code class="lang-java">var box1 = <span class="hljs-keyword">new</span> Object(<span class="hljs-string">&apos;wy&apos;</span>,<span class="hljs-number">22</span>);
+var box2 = <span class="hljs-keyword">new</span> Object(<span class="hljs-string">&apos;wy&apos;</span>,<span class="hljs-number">22</span>);
+alert(box1.name == box2.name);        <span class="hljs-comment">//true</span>
+alert(box1.run() == box2.run());      <span class="hljs-comment">//true&#xFF1A;&#x52A0;&#x62EC;&#x53F7;&#x8868;&#x793A;&#x8FD4;&#x56DE;&#x7684;&#x503C;</span>
+alert(box1.run == box2.run);          <span class="hljs-comment">//false &#xFF1A;&#x4E0D;&#x52A0;&#x62EC;&#x53F7;&#x8868;&#x793A;&#x65B9;&#x6CD5;&#x7684;&#x5F15;&#x7528;&#x5730;&#x5740;</span>
+</code></pre>
+<h5 id="&#x5982;&#x679C;&#x60F3;&#x4FDD;&#x8BC1;&#x5F15;&#x7528;&#x5730;&#x5740;&#x4E00;&#x81F4;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;run&#x65B9;&#x6CD5;&#x5199;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5916;&#x9762;&#xFF0C;&#x5373;&#x5168;&#x5C40;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x5FC5;&#x8981;&#x8FD9;&#x6837;&#x505A;"><a name="&#x5982;&#x679C;&#x60F3;&#x4FDD;&#x8BC1;&#x5F15;&#x7528;&#x5730;&#x5740;&#x4E00;&#x81F4;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;run&#x65B9;&#x6CD5;&#x5199;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5916;&#x9762;&#xFF0C;&#x5373;&#x5168;&#x5C40;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x5FC5;&#x8981;&#x8FD9;&#x6837;&#x505A;" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x679C;&#x60F3;&#x4FDD;&#x8BC1;&#x5F15;&#x7528;&#x5730;&#x5740;&#x4E00;&#x81F4;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;run&#x65B9;&#x6CD5;&#x5199;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5916;&#x9762;&#xFF0C;&#x5373;&#x5168;&#x5C40;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x5FC5;&#x8981;&#x8FD9;&#x6837;&#x505A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5982;&#x679C;&#x60F3;&#x4FDD;&#x8BC1;&#x5F15;&#x7528;&#x5730;&#x5740;&#x4E00;&#x81F4;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;run()&#x65B9;&#x6CD5;&#x5199;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5916;&#x9762;&#xFF0C;&#x5373;&#x5168;&#x5C40;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x5FC5;&#x8981;&#x8FD9;&#x6837;&#x505A;</h5>
+<pre><code class="lang-java"><span class="hljs-function">function <span class="hljs-title">run</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name + <span class="hljs-keyword">this</span>.age + <span class="hljs-string">&apos;&#x8FD0;&#x884C;&#x4E2D;...&apos;</span>;
+}
+</code></pre>
+<h5 id="&#x5BFC;&#x81F4;&#x65B0;&#x7684;&#x95EE;&#x9898;&#x662F;this&#x5728;&#x5168;&#x5C40;&#x4E0B;&#x4EE3;&#x8868;window&#x4E0D;&#x4EE3;&#x8868;&#x8BE5;&#x5BF9;&#x8C61;&#xFF0C;&#x4E14;&#x5185;&#x805A;&#x4F4E;&#xFF0C;&#x96F6;&#x6563;&#x3002;"><a name="&#x5BFC;&#x81F4;&#x65B0;&#x7684;&#x95EE;&#x9898;&#x662F;this&#x5728;&#x5168;&#x5C40;&#x4E0B;&#x4EE3;&#x8868;window&#x4E0D;&#x4EE3;&#x8868;&#x8BE5;&#x5BF9;&#x8C61;&#xFF0C;&#x4E14;&#x5185;&#x805A;&#x4F4E;&#xFF0C;&#x96F6;&#x6563;&#x3002;" class="anchor-navigation-ex-anchor" href="#&#x5BFC;&#x81F4;&#x65B0;&#x7684;&#x95EE;&#x9898;&#x662F;this&#x5728;&#x5168;&#x5C40;&#x4E0B;&#x4EE3;&#x8868;window&#x4E0D;&#x4EE3;&#x8868;&#x8BE5;&#x5BF9;&#x8C61;&#xFF0C;&#x4E14;&#x5185;&#x805A;&#x4F4E;&#xFF0C;&#x96F6;&#x6563;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BFC;&#x81F4;&#x65B0;&#x7684;&#x95EE;&#x9898;&#x662F;this&#x5728;&#x5168;&#x5C40;&#x4E0B;&#x4EE3;&#x8868;window,&#x4E0D;&#x4EE3;&#x8868;&#x8BE5;&#x5BF9;&#x8C61;&#xFF0C;&#x4E14;&#x5185;&#x805A;&#x4F4E;&#xFF0C;&#x96F6;&#x6563;&#x3002;</h5>
+<h3 id="&#x4E09;&#x3001;&#x539F;&#x578B;&#x5BF9;&#x8C61;"><a name="&#x4E09;&#x3001;&#x539F;&#x578B;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;&#x539F;&#x578B;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x3001;&#x539F;&#x578B;&#x5BF9;&#x8C61;</h3>
+<h4 id="1&#x6784;&#x9020;&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;"><a name="1&#x6784;&#x9020;&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#1&#x6784;&#x9020;&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.&#x6784;&#x9020;&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;</h4>
+<pre><code class="lang-java"><span class="hljs-function">function <span class="hljs-title">Box</span><span class="hljs-params">()</span></span>{     <span class="hljs-comment">//&#x6B64;&#x5904;&#x5B9A;&#x4E49;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;&#x548C;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;</span>
+}
+Box.prototype.name = <span class="hljs-string">&apos;yaoxxx&apos;</span>;
+Box.prototype.age = <span class="hljs-number">100</span>;
+Box.prototype.run = function(){
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name + <span class="hljs-keyword">this</span>.age + <span class="hljs-string">&apos;&#x8FD0;&#x884C;&#x4E2D;...&apos;</span>;
+};
+
+var box1 = <span class="hljs-keyword">new</span> Box();
+alert(box1.age);
+alert(box1.run());          <span class="hljs-comment">//&#x6B63;&#x5E38;&#x8F93;&#x51FA;</span>
+</code></pre>
+<h5 id="&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x5730;&#x5740;&#x90FD;&#x4E00;&#x6837;"><a name="&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x5730;&#x5740;&#x90FD;&#x4E00;&#x6837;" class="anchor-navigation-ex-anchor" href="#&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x5730;&#x5740;&#x90FD;&#x4E00;&#x6837;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x5730;&#x5740;&#x90FD;&#x4E00;&#x6837;</h5>
+<pre><code class="lang-java">var box1 = <span class="hljs-keyword">new</span> Box();
+var box2 = <span class="hljs-keyword">new</span> Box();
+alert(box1.age == box2.age);        <span class="hljs-comment">//true</span>
+alert(box1.run == box2.run);        <span class="hljs-comment">//true</span>
+</code></pre>
+<h5 id="&#x2014;proto&#x2014;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8BBF;&#x95EE;&#x4E0D;&#x5230;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6307;&#x9488;&#x6307;&#x5411;&#x539F;&#x578B;&#x5BF9;&#x8C61;"><a name="&#x2014;proto&#x2014;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8BBF;&#x95EE;&#x4E0D;&#x5230;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6307;&#x9488;&#x6307;&#x5411;&#x539F;&#x578B;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x2014;proto&#x2014;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8BBF;&#x95EE;&#x4E0D;&#x5230;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6307;&#x9488;&#x6307;&#x5411;&#x539F;&#x578B;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x2014;proto&#x2014;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8BBF;&#x95EE;&#x4E0D;&#x5230;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6307;&#x9488;&#x6307;&#x5411;&#x539F;&#x578B;&#x5BF9;&#x8C61;</h5>
+<h5 id="constructor&#x8D77;&#x5230;&#x8FDE;&#x63A5;&#x7684;&#x4F5C;&#x7528;"><a name="constructor&#x8D77;&#x5230;&#x8FDE;&#x63A5;&#x7684;&#x4F5C;&#x7528;" class="anchor-navigation-ex-anchor" href="#constructor&#x8D77;&#x5230;&#x8FDE;&#x63A5;&#x7684;&#x4F5C;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>constructor&#x8D77;&#x5230;&#x8FDE;&#x63A5;&#x7684;&#x4F5C;&#x7528;</h5>
+<p><img src="../../&#x539F;&#x578B;&#x6A21;&#x5F0F;.PNG" alt=""></p>
+<h5 id="&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x662F;&#x5426;&#x6307;&#x5411;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#xFF08;&#x53EA;&#x8981;&#x5B9E;&#x4F8B;&#x5316;&#x5C31;&#x662F;&#x81EA;&#x52A8;&#x6307;&#x5411;&#x7684;&#xFF09;"><a name="&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x662F;&#x5426;&#x6307;&#x5411;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#xFF08;&#x53EA;&#x8981;&#x5B9E;&#x4F8B;&#x5316;&#x5C31;&#x662F;&#x81EA;&#x52A8;&#x6307;&#x5411;&#x7684;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x662F;&#x5426;&#x6307;&#x5411;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#xFF08;&#x53EA;&#x8981;&#x5B9E;&#x4F8B;&#x5316;&#x5C31;&#x662F;&#x81EA;&#x52A8;&#x6307;&#x5411;&#x7684;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x662F;&#x5426;&#x6307;&#x5411;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#xFF08;&#x53EA;&#x8981;&#x5B9E;&#x4F8B;&#x5316;&#x5C31;&#x662F;&#x81EA;&#x52A8;&#x6307;&#x5411;&#x7684;&#xFF09;</h5>
+<pre><code class="lang-java">Box.prototype.isPrototypeOf(box1);      <span class="hljs-comment">//true</span>
+</code></pre>
+<h5 id="&#x6267;&#x884C;&#x6D41;&#x7A0B;&#xFF1A;"><a name="&#x6267;&#x884C;&#x6D41;&#x7A0B;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x6267;&#x884C;&#x6D41;&#x7A0B;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6267;&#x884C;&#x6D41;&#x7A0B;&#xFF1A;</h5>
+<ul>
+<li>&#x5148;&#x67E5;&#x627E;&#x6784;&#x9020;&#x51FD;&#x6570;&#x91CC;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x6709;&#xFF0C;&#x8FD4;&#x56DE;</li>
+<li>&#x6784;&#x9020;&#x4E2D;&#x6CA1;&#x6709;&#xFF0C;&#x67E5;&#x627E;&#x539F;&#x578B;&#xFF0C;&#x5982;&#x679C;&#x6709;&#xFF0C;&#x8FD4;&#x56DE;</li>
+</ul>
+<pre><code class="lang-java">box1.name = <span class="hljs-string">&apos;&#x5B9E;&#x4F8B;&apos;</span>;            <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;</span>
+delete box1.name;             <span class="hljs-comment">//&#x5220;&#x9664;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;</span>
+delete Box.prototype.name;    <span class="hljs-comment">//&#x5220;&#x9664;&#x539F;&#x578B;&#x5C5E;&#x6027;&#xFF0C;&#x4E0D;&#x4F1A;&#x8FD9;&#x4E48;&#x7528;</span>
+</code></pre>
+<h5 id="&#x5224;&#x65AD;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x5728;&#x5B9E;&#x4F8B;&#x4E2D;"><a name="&#x5224;&#x65AD;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x5728;&#x5B9E;&#x4F8B;&#x4E2D;" class="anchor-navigation-ex-anchor" href="#&#x5224;&#x65AD;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x5728;&#x5B9E;&#x4F8B;&#x4E2D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5224;&#x65AD;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x5728;&#x5B9E;&#x4F8B;&#x4E2D;</h5>
+<pre><code class="lang-java">box1.hasOwnProperty(name);      <span class="hljs-comment">//&#x5224;&#x65AD;&#x5B9E;&#x4F8B;&#x4E2D;&#x662F;&#x5426;&#x5B58;&#x5728;&#x5C5E;&#x6027;</span>
+</code></pre>
+<h5 id="&#x5224;&#x65AD;&#x5C5E;&#x6027;&#x5728;&#x4E24;&#x4E2A;&#x4E2D;&#x662F;&#x5426;&#x5B58;&#x5728;"><a name="&#x5224;&#x65AD;&#x5C5E;&#x6027;&#x5728;&#x4E24;&#x4E2A;&#x4E2D;&#x662F;&#x5426;&#x5B58;&#x5728;" class="anchor-navigation-ex-anchor" href="#&#x5224;&#x65AD;&#x5C5E;&#x6027;&#x5728;&#x4E24;&#x4E2A;&#x4E2D;&#x662F;&#x5426;&#x5B58;&#x5728;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5224;&#x65AD;&#x5C5E;&#x6027;&#x5728;&#x4E24;&#x4E2A;&#x4E2D;&#x662F;&#x5426;&#x5B58;&#x5728;</h5>
+<pre><code class="lang-java"><span class="hljs-string">&apos;name&apos;</span> in box1;                 <span class="hljs-comment">//&#x4E00;&#x4E2A;&#x5B58;&#x5728;&#x4E3A;true,&#x5747;&#x4E0D;&#x5B58;&#x5728;false</span>
+</code></pre>
+<h5 id="&#x5224;&#x65AD;&#x53EA;&#x6709;&#x539F;&#x578B;&#x4E2D;&#x6709;&#x5C5E;&#x6027;&#x7ED3;&#x5408;&#x4EE5;&#x4E0A;"><a name="&#x5224;&#x65AD;&#x53EA;&#x6709;&#x539F;&#x578B;&#x4E2D;&#x6709;&#x5C5E;&#x6027;&#x7ED3;&#x5408;&#x4EE5;&#x4E0A;" class="anchor-navigation-ex-anchor" href="#&#x5224;&#x65AD;&#x53EA;&#x6709;&#x539F;&#x578B;&#x4E2D;&#x6709;&#x5C5E;&#x6027;&#x7ED3;&#x5408;&#x4EE5;&#x4E0A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5224;&#x65AD;&#x53EA;&#x6709;&#x539F;&#x578B;&#x4E2D;&#x6709;&#x5C5E;&#x6027;(&#x7ED3;&#x5408;&#x4EE5;&#x4E0A;)</h5>
+<pre><code class="lang-java"><span class="hljs-function">function <span class="hljs-title">isProperty</span><span class="hljs-params">(obj,property)</span></span>{
+    <span class="hljs-keyword">return</span> !obj.hasOwnProperty(property) &amp;&amp; property in obj;
+}
+</code></pre>
+<h4 id="2&#x5B57;&#x9762;&#x91CF;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;"><a name="2&#x5B57;&#x9762;&#x91CF;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#2&#x5B57;&#x9762;&#x91CF;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>2.&#x5B57;&#x9762;&#x91CF;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;</h4>
+<h5 id="&#x6784;&#x9020;&#x5668;&#x6307;&#x5411;object"><a name="&#x6784;&#x9020;&#x5668;&#x6307;&#x5411;object" class="anchor-navigation-ex-anchor" href="#&#x6784;&#x9020;&#x5668;&#x6307;&#x5411;object"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6784;&#x9020;&#x5668;&#x6307;&#x5411;Object</h5>
+<pre><code class="lang-java"><span class="hljs-function">function <span class="hljs-title">Box</span><span class="hljs-params">()</span></span>{};               <span class="hljs-comment">//&#x5FC5;&#x987B;&#x6709;&#x6784;&#x9020;</span>
+Box.prototype = {                <span class="hljs-comment">//&#x95EE;&#x9898;&#xFF1A;&#x5B57;&#x9762;&#x91CF;&#x521B;&#x5EFA;&#x7684;&#x65B9;&#x5F0F;&#x4F7F;&#x7528;constructor&#x5C5E;&#x6027;&#x9ED8;&#x8BA4;&#x6307;&#x5411;Object</span>
+    constructor : Box;          <span class="hljs-comment">//&#x4F7F;&#x5176;&#x5F3A;&#x5236;&#x6307;&#x5411;Box</span>
+    name : <span class="hljs-string">&apos;yaoxxx&apos;</span>,
+    age : <span class="hljs-number">22</span> ,
+    run : function (){
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name + <span class="hljs-keyword">this</span>.age + <span class="hljs-string">&apos;&#x8FD0;&#x884C;&#x4E2D;...&apos;</span>;
+    }
+};
+var box = <span class="hljs-keyword">new</span> Box();
+alert(box.run());
+</code></pre>
+<h5 id="&#x91CD;&#x5199;&#x9700;&#x8C28;&#x614E;&#xFF08;&#x8981;&#x91CD;&#x5199;&#x5C31;&#x5168;&#x90E8;&#x91CD;&#x5199;&#xFF09;"><a name="&#x91CD;&#x5199;&#x9700;&#x8C28;&#x614E;&#xFF08;&#x8981;&#x91CD;&#x5199;&#x5C31;&#x5168;&#x90E8;&#x91CD;&#x5199;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x5199;&#x9700;&#x8C28;&#x614E;&#xFF08;&#x8981;&#x91CD;&#x5199;&#x5C31;&#x5168;&#x90E8;&#x91CD;&#x5199;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x91CD;&#x5199;&#x9700;&#x8C28;&#x614E;&#xFF08;&#x8981;&#x91CD;&#x5199;&#x5C31;&#x5168;&#x90E8;&#x91CD;&#x5199;&#xFF09;</h5>
+<pre><code class="lang-java">Box.prototype = {    <span class="hljs-comment">//&#x91CD;&#x5199;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;</span>
+    age : <span class="hljs-number">200</span>        <span class="hljs-comment">//&#x5C31;&#x5207;&#x65AD;&#x4E86;&#x539F;&#x6765;&#x7684;&#x8054;&#x7CFB;</span>
+};
+var box = <span class="hljs-keyword">new</span> Box();
+box.run();           <span class="hljs-comment">//&#x62A5;&#x9519;&#xFF1A;not a function</span>
+</code></pre>
+<h5 id="&#x67E5;&#x770B;&#x67D0;&#x4E2A;&#x7C7B;&#x662F;&#x5426;&#x6709;&#x67D0;&#x4E2A;&#x65B9;&#x6CD5;"><a name="&#x67E5;&#x770B;&#x67D0;&#x4E2A;&#x7C7B;&#x662F;&#x5426;&#x6709;&#x67D0;&#x4E2A;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x67D0;&#x4E2A;&#x7C7B;&#x662F;&#x5426;&#x6709;&#x67D0;&#x4E2A;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;&#x67D0;&#x4E2A;&#x7C7B;&#x662F;&#x5426;&#x6709;&#x67D0;&#x4E2A;&#x65B9;&#x6CD5;</h5>
+<pre><code class="lang-java">Array.prototype.sort;           <span class="hljs-comment">//&#x4F1A;&#x8FD4;&#x56DE;&#x8BE5;&#x65B9;&#x6CD5;</span>
+String.prototype.substring;
+</code></pre>
+<h5 id="&#x4E3A;&#x539F;&#x578B;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#xFF1A;&#x4E0D;&#x63A8;&#x8350;&#xFF0C;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x547D;&#x540D;&#x51B2;&#x7A81;&#xFF0C;&#x5728;&#x4EE3;&#x7801;&#x91CF;&#x5C11;&#x65F6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;"><a name="&#x4E3A;&#x539F;&#x578B;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#xFF1A;&#x4E0D;&#x63A8;&#x8350;&#xFF0C;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x547D;&#x540D;&#x51B2;&#x7A81;&#xFF0C;&#x5728;&#x4EE3;&#x7801;&#x91CF;&#x5C11;&#x65F6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x4E3A;&#x539F;&#x578B;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#xFF1A;&#x4E0D;&#x63A8;&#x8350;&#xFF0C;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x547D;&#x540D;&#x51B2;&#x7A81;&#xFF0C;&#x5728;&#x4EE3;&#x7801;&#x91CF;&#x5C11;&#x65F6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3A;&#x539F;&#x578B;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#xFF1A;&#x4E0D;&#x63A8;&#x8350;&#xFF0C;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x547D;&#x540D;&#x51B2;&#x7A81;&#xFF0C;&#x5728;&#x4EE3;&#x7801;&#x91CF;&#x5C11;&#x65F6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;</h5>
+<pre><code class="lang-java">String.prototype.addstring = function(){
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span> + <span class="hljs-string">&apos;&#x88AB;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;...&apos;</span>;
+};
+var box = <span class="hljs-string">&apos;Lee&apos;</span>;
+alert(box.addstring());
+</code></pre>
+<h4 id="3&#x5171;&#x4EAB;&#x662F;&#x4F18;&#x70B9;&#x4E5F;&#x662F;&#x7F3A;&#x70B9;"><a name="3&#x5171;&#x4EAB;&#x662F;&#x4F18;&#x70B9;&#x4E5F;&#x662F;&#x7F3A;&#x70B9;" class="anchor-navigation-ex-anchor" href="#3&#x5171;&#x4EAB;&#x662F;&#x4F18;&#x70B9;&#x4E5F;&#x662F;&#x7F3A;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>3.&#x5171;&#x4EAB;&#x662F;&#x4F18;&#x70B9;&#x4E5F;&#x662F;&#x7F3A;&#x70B9;</h4>
+<pre><code class="lang-java"><span class="hljs-function">function <span class="hljs-title">Box</span><span class="hljs-params">()</span></span>{}
+Box.prototype = {
+    constructor : Box,
+    name : <span class="hljs-string">&apos;yaoxxx&apos;</span>,
+    age : <span class="hljs-number">22</span>,
+    family : [<span class="hljs-string">&apos;&#x7238;&#x7238;&apos;</span>,<span class="hljs-string">&apos;&#x5988;&#x5988;&apos;</span>,<span class="hljs-string">&apos;&#x59B9;&#x59B9;&apos;</span>],
+    run : function(){
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name + <span class="hljs-keyword">this</span>.age + <span class="hljs-string">&apos;&#x8FD0;&#x884C;&#x4E2D;...&apos;</span>;  
+    }
+};
+</code></pre>
+<p>&#x95EE;&#x9898;1&#xFF1A;&#x5171;&#x4EAB;&#x5C5E;&#x6027;&#x503C;&#x4E0D;&#x53EF;&#x4FEE;&#x6539;
+&#x95EE;&#x9898;2&#xFF1A;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x503C;&#x4E00;&#x65E6;&#x4FEE;&#x6539;&#x6240;&#x6709;&#x7528;&#x539F;&#x578B;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x8BE5;&#x503C;&#x90FD;&#x4F1A;&#x88AB;&#x4FEE;&#x6539;</p>
+<p>&#x6545;&#x800C;&#x63D0;&#x51FA;&#x7EC4;&#x5408;&#x6784;&#x9020;&#x6A21;&#x5F0F;+&#x539F;&#x578B;&#x6A21;&#x5F0F;&#xFF1A;&#x89E3;&#x51B3;&#x4E86;&#x4F20;&#x53C2;&#x548C;&#x5171;&#x4EAB;</p>
+<pre><code class="lang-java"><span class="hljs-function">function <span class="hljs-title">Box</span><span class="hljs-params">(name,age)</span></span>{                          <span class="hljs-comment">//&#x4FDD;&#x6301;&#x72EC;&#x7ACB;&#x90E8;&#x5206;&#xFF0C;&#x4E0D;&#x5171;&#x4EAB;</span>
+    <span class="hljs-keyword">this</span>.name = name;
+    <span class="hljs-keyword">this</span>.age = age;
+    <span class="hljs-keyword">this</span>.family = [<span class="hljs-string">&apos;&#x7238;&#x7238;&apos;</span>,<span class="hljs-string">&apos;&#x5988;&#x5988;&apos;</span>,<span class="hljs-string">&apos;&#x59B9;&#x59B9;&apos;</span>];
+}
+Box.prototype = function(){                <span class="hljs-comment">//&#x4FDD;&#x6301;&#x5171;&#x4EAB;&#x90E8;&#x5206;</span>
+    constructor : Box,
+    run : function(){
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name + <span class="hljs-keyword">this</span>.age + <span class="hljs-string">&apos;&#x8FD0;&#x884C;&#x4E2D;...&apos;</span>;  
+    }
+};
+</code></pre>
+<p>&#x4E3A;&#x89E3;&#x51B3;&#x5C01;&#x88C5;&#x6027;&#xFF0C;&#x63D0;&#x51FA;&#x52A8;&#x6001;&#x539F;&#x578B;&#x6A21;&#x5F0F;</p>
+<pre><code class="lang-java"><span class="hljs-function">function <span class="hljs-title">Box</span><span class="hljs-params">(name,age)</span></span>{                      
+    <span class="hljs-keyword">this</span>.name = name;
+    <span class="hljs-keyword">this</span>.age = age;
+    <span class="hljs-keyword">this</span>.family = [<span class="hljs-string">&apos;&#x7238;&#x7238;&apos;</span>,<span class="hljs-string">&apos;&#x5988;&#x5988;&apos;</span>,<span class="hljs-string">&apos;&#x59B9;&#x59B9;&apos;</span>];
+
+    Box.prototype.run = function(){            
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name + <span class="hljs-keyword">this</span>.age + <span class="hljs-string">&apos;&#x8FD0;&#x884C;&#x4E2D;...&apos;</span>;  
+    };
+}
+</code></pre>
+<p>&#x95EE;&#x9898;&#x5728;&#x4E8E;&#x6BCF;&#x6B21;&#x8C03;&#x6784;&#x9020;new&#x90FD;&#x4F1A;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x539F;&#x578B;</p>
+<p>&#x63D0;&#x51FA;&#x5224;&#x65AD;run&#x7684;&#x7C7B;&#x578B;&#x6765;&#x7EA6;&#x675F;&#x5B83;&#x7684;&#x6267;&#x884C;&#x6B21;&#x6570;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">if</span>(typeof run != <span class="hljs-string">&apos;function&apos;</span>){<span class="hljs-comment">//&#x539F;&#x578B;&#x521D;&#x59CB;&#x5316;}</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x4EE5;&#x4E0A;&#x8FD8;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#xFF1A;&#x5BC4;&#x751F;&#x6784;&#x9020;&#x6A21;&#x5F0F;&#xFF1A;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;+&#x6784;&#x9020;&#x51FD;&#x6570;&#x6A21;&#x5F0F;</p>
+<pre><code class="lang-java"><span class="hljs-function">function <span class="hljs-title">Box</span><span class="hljs-params">(name,age)</span></span>{                       <span class="hljs-comment">//&#x4E0E;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#x4E0D;&#x540C;&#xFF1A;&#x7C7B;&#x540D;createobj</span>
+    var obj = <span class="hljs-keyword">new</span> Object();
+    obj.name = name;
+    obj.age = age;
+    obj.run = function (){
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name + <span class="hljs-keyword">this</span>.age + <span class="hljs-string">&apos;&#x8FD0;&#x884C;&#x4E2D;...&apos;</span>;
+    };
+    <span class="hljs-keyword">return</span> obj;
+}
+</code></pre>
+<p>&#x7A33;&#x59A5;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0E;&#x5BC4;&#x751F;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0D;&#x540C;&#x70B9;&#xFF1A;&#x4E0D;&#x80FD;&#x7528;new</p>
+<pre><code class="lang-java">var box = Box(<span class="hljs-string">&apos;&#x4F60;&#x597D;&apos;</span>,<span class="hljs-number">22</span>);
+</code></pre>
+<h3 id="&#x56DB;&#x3001;&#x7EE7;&#x627F;"><a name="&#x56DB;&#x3001;&#x7EE7;&#x627F;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x3001;&#x7EE7;&#x627F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DB;&#x3001;&#x7EE7;&#x627F;</h3>
+<p>&#x7EE7;&#x627F;&#xFF1A;&#x901A;&#x8FC7;&#x539F;&#x578B;&#x94FE;&#x5B9E;&#x73B0;</p>
+<pre><code class="lang-java"><span class="hljs-function">function <span class="hljs-title">Box</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">this</span>.name = <span class="hljs-string">&apos;Lee&apos;</span>;
+}
+Box.prototype.name = <span class="hljs-string">&apos;Jack&apos;</span>;
+<span class="hljs-function">function <span class="hljs-title">Desk</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">this</span>.age = <span class="hljs-number">100</span>;
+}
+Desk.Prototype = <span class="hljs-keyword">new</span> Box();          <span class="hljs-comment">//&#x5B50;&#x7C7B;&#x7684;&#x539F;&#x578B;&#x662F;&#x7236;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;</span>
+var desk = <span class="hljs-keyword">new</span> Desk();
+alert(desk.name);                    <span class="hljs-comment">//&#x5C31;&#x8FD1;&#x539F;&#x5219;</span>
+
+alert(desk <span class="hljs-keyword">instanceof</span> Object);       <span class="hljs-comment">//&#x5B50;&#x7C7B;&#x578B;&#x4ECE;&#x5C5E;&#x4E8E;&#x5B83;&#x7684;&#x8D85;&#x7C7B;</span>
+alert(desk <span class="hljs-keyword">instanceof</span> Desk); 
+alert(desk <span class="hljs-keyword">instanceof</span> Box);
+</code></pre>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-10-05 11:38:31
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../day13/" class="navigation navigation-prev " aria-label="Previous page: 内置对象">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../day15/" class="navigation navigation-next " aria-label="Next page: 匿名函数与闭包">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"面向对象与原型","level":"1.3.14","depth":2,"next":{"title":"匿名函数与闭包","level":"1.3.15","depth":2,"path":"JS/day15/README.MD","ref":"./JS/day15/README.MD","articles":[]},"previous":{"title":"内置对象","level":"1.3.13","depth":2,"path":"JS/day13/README.MD","ref":"./JS/day13/README.MD","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-plus","splitter","expandable-chapters-small","anchor-navigation-ex","tbfed-pagefooter","toggle-chapters","sectionx","alerts","copy-code-button","escape-words-in-tablecell","toggle-section","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"toggle-section":{"iconUrl":""},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":true},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"alerts":{},"escape-words-in-tablecell":{},"expandable-chapters-small":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"yaoxxxyao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","language":"zh-hans","gitbook":"*","description":"个人笔记"},"file":{"path":"JS/day14/README.MD","mtime":"2018-10-05T03:38:31.865Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-26T03:26:35.691Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-section/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
